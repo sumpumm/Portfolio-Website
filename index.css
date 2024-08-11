@@ -103,3 +103,30 @@
   .secondSection > div{
     width: 30%;
   }
+
+  .contactForm h1{
+    
+    text-align: center;
+
+  }
+
+  .contactForm{
+    padding: 0 344px;
+    padding-top: 50px;
+
+
+  }
+
+  .contactForm .mb-3{
+    padding: 15px;
+  }
+
+  .btn{
+    padding: 12px;
+    background: rgb(100, 1, 100);
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+  }

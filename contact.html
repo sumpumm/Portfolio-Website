@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Me</title>
+</head>
+<body>
+    <head>
+        <nav>
+          <div class="left">Sumpumm's Portfolio</div>
+          <div class="right">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/Resume_Samarpan Piya.pdf" target="_blank">My CV</a></li>
+              <li><a href="/">Service</a></li>
+              <li><a href="/">Projects</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+    </head>
+    <div class="main">
+        <div class="contactForm">
+            <h1>Hey there! You've reached Samarpan</h1>
+            <form  onsubmit="return validateForm()">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="phone" class="form-control" id="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="enquiry" class="form-label">enquiry</label>
+                    <input type="enquiry" class="form-control" id="enquiry">
+                  </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let enquiry = document.getElementById("enquiry").value;
+            
+            if (email == "") {
+              alert("email is required");
+              return false;
+            } else if (phone.length != 10) {
+              alert("enter a valid phone number");
+              return false;
+            } else if (phone == "") {
+              alert("password is required");
+              return false;
+            } else if (
+                !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(email)
+              ) {
+                alert("Email is invalid");
+                return false;
+              }else if (enquiry == "") {
+                alert("enquiry is required");
+                return false;
+          }
+          return true;
+        }
+        
+    </script>
+</body>
+</html>
