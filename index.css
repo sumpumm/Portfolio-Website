@@ -90,7 +90,7 @@
   }
   main hr{
     margin: 84px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
   }
 
   .secondSection{
@@ -203,3 +203,28 @@
     color: var(--second-bg-color);
  }
  
+ footer{
+  background-color: rgba(87, 79, 87, 0.562);
+  height: 233px;
+ }
+
+ .footer{
+  display: flex;
+  padding: 70px 122px ;
+  justify-content: space-evenly;
+ }
+
+ .footer ul{
+  list-style: none;
+ }
+
+ .footer > div{
+  width: 223px;
+ }
+
+ footer .footer-rights{
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+
+ }
